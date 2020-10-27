@@ -11,6 +11,7 @@ class Project
     @backers << backer
     if backer.backed_projects.find{|project| project == self} == nil
       backer.back_project(self)
+    end
   end
 
 end
