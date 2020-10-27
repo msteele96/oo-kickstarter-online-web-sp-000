@@ -13,7 +13,6 @@ class Backer
     if project.backers.find{|backer| backer == self} == nil
       project.add_backer(self)
     end
-    binding.pry
   end
 
 end
